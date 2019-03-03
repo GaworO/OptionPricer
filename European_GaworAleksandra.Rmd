@@ -1,0 +1,56 @@
+---
+title: "EuroeanOption up-and-in"
+author: "Aleksandra Gawor"
+date: "27 stycznia 2019"
+output: html_document
+---
+
+```{r}
+library("GaworAleksandra")
+
+```
+
+Up and in options are a type of barrier option that can only be exercised when the price of the underlying asset reaches a set barrier level. Up and in is one common type of knock in barrier option.
+
+source: https://www.investopedia.com/terms/u/up-and-inoption.asp
+
+```{r}
+install.packages("GaworAleksandra_1.0.tar.gz",
+                 type = "source",
+                 repos = NULL)
+
+```
+
+
+Maximum value of my barrier is equal to 99.
+When the barrier value is equal to 100 the value of an option will be equal to zero
+to make the results optimal I have chosen to make the value of the barrier equal to 70
+
+```{r}
+
+getEuropeanPutPrice(126, 100, 95, 0.2, 0.06, 0.5, 70)
+```
+```{r}
+McEuropean <- function (expiry) {
+  return(
+    getEuropeanPutPrice(126, 100, 95, 0.2, 0.06, 0.5, 70)
+  )
+  }
+
+# 5. call the function
+McEuropean(0.5)
+
+# 6. arguments values of values of cunction
+expiry <- seq(0.01, 1, by = 0.01)
+result <- sapply(expiry, McEuropean)
+
+# 7. same plot using ggplot2 package
+library(ggplot2)
+qplot(x = expiry,
+      y = result,
+      col = 'red',
+      xlab = "time to maturity",
+      ylab = "price of European put option",
+      main = "price of European put option vs. time  to maturity")
+```
+

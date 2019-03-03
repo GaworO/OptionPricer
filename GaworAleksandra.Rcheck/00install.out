@@ -1,0 +1,59 @@
+* installing *source* package 'GaworAleksandra' ...
+** libs
+
+*** arch - i386
+c:/Rtools/mingw_32/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c EuropeanOption.cpp -o EuropeanOption.o
+EuropeanOption.cpp: In member function 'double EuropeanOption::getEuropeanPutPrice(int)':
+EuropeanOption.cpp:89:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(unsigned int j = thisPath[0]; j< int(thisPath.size()/2); j++) { //here I am looking for the maximum value of the first path
+                                            ^
+c:/Rtools/mingw_32/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c Random1.cpp -o Random1.o
+c:/Rtools/mingw_32/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c RcppExports.cpp -o RcppExports.o
+c:/Rtools/mingw_32/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c functions.cpp -o functions.o
+c:/Rtools/mingw_32/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c mainR.cpp -o mainR.o
+c:/Rtools/mingw_32/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c rcpp_hello_world.cpp -o rcpp_hello_world.o
+c:/Rtools/mingw_32/bin/g++ -shared -s -static-libgcc -o GaworAleksandra.dll tmp.def EuropeanOption.o Random1.o RcppExports.o functions.o mainR.o rcpp_hello_world.o -LC:/PROGRA~1/R/R-35~1.1/bin/i386 -lR
+installing to C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/GaworAleksandra/libs/i386
+
+*** arch - x64
+c:/Rtools/mingw_64/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c EuropeanOption.cpp -o EuropeanOption.o
+EuropeanOption.cpp: In member function 'double EuropeanOption::getEuropeanPutPrice(int)':
+EuropeanOption.cpp:89:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(unsigned int j = thisPath[0]; j< int(thisPath.size()/2); j++) { //here I am looking for the maximum value of the first path
+                                            ^
+c:/Rtools/mingw_64/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c Random1.cpp -o Random1.o
+c:/Rtools/mingw_64/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c RcppExports.cpp -o RcppExports.o
+c:/Rtools/mingw_64/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c functions.cpp -o functions.o
+c:/Rtools/mingw_64/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c mainR.cpp -o mainR.o
+c:/Rtools/mingw_64/bin/g++  -I"C:/PROGRA~1/R/R-35~1.1/include" -DNDEBUG  -I"C:/Program Files/R/R-3.5.1/library/Rcpp/include"        -O2 -Wall  -mtune=generic -c rcpp_hello_world.cpp -o rcpp_hello_world.o
+c:/Rtools/mingw_64/bin/g++ -shared -s -static-libgcc -o GaworAleksandra.dll tmp.def EuropeanOption.o Random1.o RcppExports.o functions.o mainR.o rcpp_hello_world.o -LC:/PROGRA~1/R/R-35~1.1/bin/x64 -lR
+C:\TDM-GC~1\bin\nm.exe: C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/EuropeanOption.o: File format not recognized
+C:\TDM-GC~1\bin\nm.exe: C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/Random1.o: File format not recognized
+C:\TDM-GC~1\bin\nm.exe: C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/RcppExports.o: File format not recognized
+C:\TDM-GC~1\bin\nm.exe: C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/functions.o: File format not recognized
+C:\TDM-GC~1\bin\nm.exe: C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/mainR.o: File format not recognized
+C:\TDM-GC~1\bin\nm.exe: C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/rcpp_hello_world.o: File format not recognized
+Komunikaty ostrzegawcze:
+1: W poleceniu 'system(sprintf("%s -Pg %s", shQuote(nm), shQuote(f)), intern = TRUE)':
+  uruchomione polecenie '"C:\TDM-GC~1\bin\nm.exe" -Pg "C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/EuropeanOption.o"' otrzyma這 status 1
+2: W poleceniu 'system(sprintf("%s -Pg %s", shQuote(nm), shQuote(f)), intern = TRUE)':
+  uruchomione polecenie '"C:\TDM-GC~1\bin\nm.exe" -Pg "C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/Random1.o"' otrzyma這 status 1
+3: W poleceniu 'system(sprintf("%s -Pg %s", shQuote(nm), shQuote(f)), intern = TRUE)':
+  uruchomione polecenie '"C:\TDM-GC~1\bin\nm.exe" -Pg "C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/RcppExports.o"' otrzyma這 status 1
+4: W poleceniu 'system(sprintf("%s -Pg %s", shQuote(nm), shQuote(f)), intern = TRUE)':
+  uruchomione polecenie '"C:\TDM-GC~1\bin\nm.exe" -Pg "C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/functions.o"' otrzyma這 status 1
+5: W poleceniu 'system(sprintf("%s -Pg %s", shQuote(nm), shQuote(f)), intern = TRUE)':
+  uruchomione polecenie '"C:\TDM-GC~1\bin\nm.exe" -Pg "C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/mainR.o"' otrzyma這 status 1
+6: W poleceniu 'system(sprintf("%s -Pg %s", shQuote(nm), shQuote(f)), intern = TRUE)':
+  uruchomione polecenie '"C:\TDM-GC~1\bin\nm.exe" -Pg "C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/00_pkg_src/GaworAleksandra/src-x64/rcpp_hello_world.o"' otrzyma這 status 1
+installing to C:/Users/Ola/Desktop/sakowski_class/GaworAleksandra/GaworAleksandra.Rcheck/GaworAleksandra/libs/x64
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+*** arch - i386
+*** arch - x64
+* DONE (GaworAleksandra)
+In R CMD INSTALL

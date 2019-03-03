@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1548594671 source:c:\users\ola\desktop\sakowski_class\gaworaleksandra\gaworaleksandra\src\europeanoption.cpp
+	"EuropeanOption.h"
+	<cmath>
+	<iostream>
+	"Random1.h"
+
+1548593847 c:\users\ola\desktop\sakowski_class\gaworaleksandra\gaworaleksandra\src\europeanoption.h
+	<vector>
+
+1453287732 c:\users\ola\desktop\sakowski_class\gaworaleksandra\gaworaleksandra\src\random1.h
+
+1421690422 source:c:\users\ola\desktop\sakowski_class\gaworaleksandra\gaworaleksandra\src\functions.cpp
+	<cmath>
+	<iostream>
+	<vector>
+
+1453287718 source:c:\users\ola\desktop\sakowski_class\gaworaleksandra\gaworaleksandra\src\random1.cpp
+	"Random1.h"
+	<cstdlib>
+	<cmath>
+
+1548595228 source:c:\users\ola\desktop\sakowski_class\gaworaleksandra\gaworaleksandra\src\rcpp_hello_world.cpp
+

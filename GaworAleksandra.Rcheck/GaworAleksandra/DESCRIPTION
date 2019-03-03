@@ -1,0 +1,15 @@
+Package: GaworAleksandra
+Type: Package
+Title: What the Package Does in One 'Title Case' Line
+Version: 1.0
+Date: 2019-01-27
+Author: Your Name
+Maintainer: Your Name <your@email.com>
+Description: One paragraph description of what the package does as one or more full sentences.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2019-01-27 12:41:57 UTC; Ola
+Built: R 3.5.1; i386-w64-mingw32; 2019-01-27 12:42:42 UTC; windows
+Archs: i386, x64
